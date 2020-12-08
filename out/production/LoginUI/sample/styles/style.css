@@ -1,0 +1,14 @@
+.cover {
+    -fx-background-color: #252d47;
+    -fx-background-radius: 5;
+}
+
+.jfx-raised-button {
+     -jfx-button-type: RAISED;
+     -fx-background-color: #25ccb6;
+     -fx-text-fill: white;
+     -fx-font-weight: bold;
+}
+.window {
+    -fx-background-radius: 6;
+}

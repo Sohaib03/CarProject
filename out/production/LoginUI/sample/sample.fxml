@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="0: 10;" styleClass="window" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <JFXButton fx:id="signUpButton" layoutX="165.0" layoutY="520.0" onAction="#handleSignUpButton" styleClass="jfx-raised-button" text="SIGN UP">
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="signInButton" layoutX="574.0" layoutY="520.0" onAction="#handleSignInButton" styleClass="jfx-raised-button" text="SIGN IN">
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <Text fill="#18b9ff" layoutX="167.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+               <font>
+                  <Font name="Baloo Da 2 Medium" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="#18b9ff" layoutX="570.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+               <font>
+                  <Font name="Baloo Da 2 Medium" size="25.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="signInUsername" layoutX="114.0" layoutY="257.0" prefHeight="37.0" prefWidth="211.0" promptText="Username" unFocusColor="#18b9ff">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets></JFXTextField>
+            <JFXTextField fx:id="signInPassword" layoutX="113.0" layoutY="306.0" prefHeight="37.0" prefWidth="211.0" promptText="Password" unFocusColor="#18b9ff">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></JFXTextField>
+            <FontAwesomeIconView fill="#18b9ff" glyphName="USER" layoutX="84.0" layoutY="283.0" size="25" />
+            <FontAwesomeIconView fill="#18b9ff" glyphName="LOCK" layoutX="85.0" layoutY="335.0" size="27" />
+            <JFXTextField fx:id="signUpUsername" layoutX="522.0" layoutY="214.0" prefHeight="37.0" prefWidth="211.0" promptText="Username" unFocusColor="#18b9ff">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+            </JFXTextField>
+            <JFXTextField fx:id="signUpPassword" layoutX="521.0" layoutY="263.0" prefHeight="37.0" prefWidth="211.0" promptText="Password" unFocusColor="#18b9ff">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <FontAwesomeIconView fill="#18b9ff" glyphName="USER" layoutX="492.0" layoutY="240.0" size="25" />
+            <FontAwesomeIconView fill="#18b9ff" glyphName="LOCK" layoutX="493.0" layoutY="292.0" size="27" />
+            <JFXTextField fx:id="signUpConfirmPassword" layoutX="521.0" layoutY="316.0" prefHeight="37.0" prefWidth="211.0" promptText="Confirm Password" unFocusColor="#18b9ff">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <FontAwesomeIconView fill="#18b9ff" glyphName="LOCK" layoutX="493.0" layoutY="345.0" size="27" />
+            <JFXButton fx:id="signUpButton1" layoutX="169.0" layoutY="407.0" onAction="#logInClicked" styleClass="jfx-raised-button" text="LOG IN">
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <Text layoutX="137.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do not have an account !" />
+            <JFXButton fx:id="signInButton1" layoutX="529.0" layoutY="407.0" onAction="#createNewAccountClicked" styleClass="jfx-raised-button" text="CREATE NEW ACCOUNT">
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <Text layoutX="545.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account!" />
+            <Text fx:id="errorMessage" layoutX="73.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error Message" visible="false">
+               <font>
+                  <Font name="Baloo Da 2 Medium" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="coverPane" prefHeight="600.0" prefWidth="400.0" styleClass="cover" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="0.0" />
+      <JFXButton onAction="#closeButtonClicked" text=" " AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <FontAwesomeIconView fill="#25ccb6" glyphName="CLOSE" onMouseClicked="#closeButtonClicked" size="24" text="" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

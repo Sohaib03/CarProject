@@ -1,0 +1,11 @@
+.sidepane {
+    -fx-background-color: #2f3d4c;
+}
+
+.toppane {
+    -fx-background-color: #263340;
+}
+
+.closebutton:hover {
+    -fx-background-color: #ed6464;
+}
