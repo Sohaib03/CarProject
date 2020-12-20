@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboard.AddCarController">
+   <children>
+      <AnchorPane prefHeight="40.0" prefWidth="200.0" styleClass="toppane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="closeButton" alignment="CENTER" depthTest="DISABLE" onAction="#close" prefHeight="40.0" prefWidth="40.0" styleClass="closebutton" text=" " AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" size="30" textAlignment="CENTER" wrappingWidth="26.0" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="414.0" layoutY="74.0" text="Fillup Car Information">
+         <font>
+            <Font name="Baloo Da 2 Medium" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="raisedCard" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <VBox spacing="15.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <Label text="Car Make" textFill="#445566">
+                           <font>
+                              <Font name="Baloo Da 2 Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="carMakeTextField" unFocusColor="LIGHTGRAY">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <Label text="Car Model" textFill="#445566">
+                           <font>
+                              <Font name="Baloo Da 2 Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="carModelTextField" unFocusColor="#d3d3d3">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="88.0">
+                     <children>
+                        <Label text="Registration Number" textFill="#445566">
+                           <font>
+                              <Font name="Baloo Da 2 Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="registrationNumberTextField" unFocusColor="#d3d3d3">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox layoutX="15.0" layoutY="190.0">
+                     <children>
+                        <Label text="Colors" textFill="#445566">
+                           <font>
+                              <Font name="Baloo Da 2 Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="colorTextField" unFocusColor="#d3d3d3">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Price" textFill="#445566">
+                                 <font>
+                                    <Font name="Baloo Da 2 Medium" size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="priceTextField" unFocusColor="#d3d3d3">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Year" textFill="#445566">
+                                 <font>
+                                    <Font name="Baloo Da 2 Medium" size="14.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="yearTextField" unFocusColor="#d3d3d3">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <JFXButton fx:id="addCarButton" layoutX="372.0" layoutY="411.0" onAction="#addButtonClicked" prefWidth="100.0" styleClass="jfx-raised-button" text="Add Car" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="25.0">
+               <padding>
+                  <Insets bottom="12.0" left="25.0" right="25.0" top="12.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="cancelButton" layoutX="250.0" layoutY="409.0" onAction="#cancelButtonClicked" prefWidth="100.0" styleClass="jfx-raised-cancel-button" text="Cancel" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="150.0">
+               <padding>
+                  <Insets bottom="12.0" left="25.0" right="25.0" top="12.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label fx:id="errorLabel" layoutX="250.0" layoutY="119.0" text="Error" />
+   </children>
+</AnchorPane>

@@ -66,7 +66,7 @@ public class Controller {
         } else {
             errorMessage.setVisible(false);
             Dashboard dashboard = new Dashboard();
-
+            System.out.println("Opened");
             Stage stage =(Stage) signInButton.getScene().getWindow();
             stage.close();
         }

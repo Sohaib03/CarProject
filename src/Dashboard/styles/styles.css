@@ -1,6 +1,13 @@
 .sidepane {
     -fx-background-color: #2f3d4c;
 }
+.sidepaneButton {
+    -fx-background-color: transparent;
+}
+
+.sidepaneButton:hover {
+    -fx-background-color: #455566;
+}
 
 .toppane {
     -fx-background-color: #263340;
@@ -8,4 +15,53 @@
 
 .closebutton:hover {
     -fx-background-color: #ed6464;
+}
+
+.transparent {
+    -fx-background-color: transparent;
+}
+
+.item {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 4;
+}
+
+.raisedCard {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 4;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 2.0 ,4.0);
+}
+
+.item:hover {
+    -fx-background-color: #25ccb6;
+}
+.jfx-raised-button {
+    -jfx-button-type: RAISED;
+    -fx-background-color: #25ccb6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.jfx-raised-cancel-button {
+    -jfx-button-type: RAISED;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+.jfx-raised-cancel-button:hover {
+    -fx-background-color: #ff5f00;
+    -fx-text-fill: #ffffff;
+}
+
+.textZone {
+    -fx-background-color: #ececec;
+    -fx-background-radius: 5;
+}
+
+.jfx-radio-button {
+    -fx-selected-color: #25ccb6;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 2.0 ,4.0);
 }

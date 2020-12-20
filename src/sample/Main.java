@@ -22,6 +22,7 @@ public class Main extends Application {
     public PrintWriter pw;
     public BufferedReader br;
     private static Main instance;
+    public int status;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -49,7 +50,6 @@ public class Main extends Application {
             pw = new PrintWriter(socket.getOutputStream());
             pw.println("Connected to Client!");
             pw.flush();
-
             br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             String msg = br.readLine();
             System.out.println(msg);
@@ -69,6 +69,9 @@ public class Main extends Application {
         pw.flush();
         try {
             String returnCode = br.readLine();
+            String statusCode = br.readLine();
+            status = Integer.parseInt(statusCode);
+            System.out.println("User Status: " + status);
             if (returnCode.equals("SUCCESS")) {
                 return true;
             } else {
